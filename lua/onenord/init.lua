@@ -9,14 +9,14 @@ local util = require("onenord.util")
 local onenord = {}
 
 function onenord.setup(options)
-  config.set_options(options)
-  onenord.load(true)
+    config.set_options(options)
+    onenord.load(true)
 end
 
 function onenord.load(exec_autocmd)
-  local colors = require("onenord.colors").load()
+    local colors = require("onenord.colors").load()
 
-  util.load(colors, exec_autocmd)
+    util.load(colors, exec_autocmd)
 end
 
 return onenord

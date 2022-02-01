@@ -1,26 +1,43 @@
 local colors = {
-  fg = "#C8D0E0",
-  fg_light = "#E5E9F0",
-  bg = "#2E3440",
-  gray = "#646A76",
-  light_gray = "#6C7A96",
-  cyan = "#88C0D0",
-  blue = "#81A1C1",
-  dark_blue = "#5E81AC",
-  green = "#A3BE8C",
-  light_green = "#8FBCBB",
-  dark_red = "#BF616A",
-  red = "#D57780",
-  light_red = "#DE878F",
-  pink = "#E85B7A",
-  dark_pink = "#E44675",
-  orange = "#D08F70",
-  yellow = "#EBCB8B",
-  purple = "#B988B0",
-  light_purple = "#B48EAD",
-  none = "NONE",
-}
+    -- basic
+    none         = "NONE",
+    bg           = "#2E3440",
+    fg           = "#C8D0E0",
+    fg_light     = "#E5E9F0",
+    fg_gutter    = "#4B5668", -- new
+    gray         = "#646A76",
+    light_gray   = "#6C7A96",
+    black        = "#3B4252", -- new
+    -- white        = "#e5e9f0", -- new
+    white        = "#ffffff", -- new
 
+    -- standard palettes
+    cyan         = "#88C0D0",
+    blue         = "#81A1C1",
+    red          = "#BF616A", -- modified
+    orange       = "#D08F70",
+    yellow       = "#EBCB8B",
+    green        = "#A3BE8C",
+    purple       = "#B48EAD", -- modified
+
+    -- brighter palettes
+    light_blue   = "#8cafd2", -- new
+    light_cyan   = "#93ccdc", -- new
+    light_red    = "#DE878F",
+    light_orange = "#d89079", -- new
+    light_yellow = "#f0d399", -- new
+    light_green  = "#b1d196", -- modified
+    light_purple = "#c895bf", -- new
+
+    -- darker palettes
+    dark_blue    = "#668aab", -- modified
+    dark_cyan    = "#69a7ba", -- new
+    dark_red     = "#a54e56", -- modified
+    dark_orange  = "#b46950", -- new
+    dark_yellow  = "#d9b263", -- new
+    dark_green   = "#8aa872", -- new
+    dark_purple  = "#a96ca5", -- new
+}
 -- more semantically meaningful colors
 
 colors.error = colors.dark_red
