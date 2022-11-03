@@ -172,7 +172,7 @@ local function load_editor()
         -- column where |signs| are displayed
         SignColumnSB = { bg = colors.active, fg = colors.fg_light },
         -- |:substitute| replacement text highlighting
-        Substitute = { bg = colors.red, fg = colors.black },
+        Substitute = { bg = colors.red, fg = colors.active },
 
         -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
         LineNr = { fg = colors.fg_gutter },
@@ -195,7 +195,7 @@ local function load_editor()
         -- normal text in non-current windows
         NormalNC = { fg = colors.fg, bg = colors.bg },
         -- normal text in non-current windows
-        NormalSB = { fg = colors.gray, bg = colors.float },
+        NormalSB = { fg = colors.gray, bg = colors.active },
         -- normal text and background color for floating windows
         NormalFloat = { fg = colors.fg, bg = colors.active },
         -- floating window border
@@ -236,15 +236,15 @@ local function load_editor()
         SpellRare = { fg = colors.light_purple, bg = colors.none, style = "italic", sp = colors.purple },
 
         -- status line of current window
-        StatusLine = { fg = colors.fg, bg = colors.active },
+        StatusLine = { fg = colors.fg, bg = colors.bg },
         -- status lines of not-current windows Note: if this is equal to "StatusLine"
         -- Vim will use "^^^" in the status line of the current window.
-        StatusLineNC = { fg = colors.light_gray, bg = colors.active },
+        StatusLineNC = { fg = colors.light_gray, bg = colors.bg },
         -- status line of current terminal window
-        StatusLineTerm = { fg = colors.fg, bg = colors.active },
+        StatusLineTerm = { fg = colors.fg, bg = colors.bg },
         -- status lines of not-current terminal windows Note: if this is equal to "StatusLine"
         -- Vim will use "^^^" in the status line of the current window.
-        StatusLineTermNC = { fg = colors.light_gray, bg = colors.active },
+        StatusLineTermNC = { fg = colors.light_gray, bg = colors.bg },
         -- tab pages line, where there are no labels
         TabLineFill = { fg = colors.light_gray, bg = colors.bg },
         -- tab pages line, active tab page label
@@ -277,13 +277,6 @@ local function load_editor()
         healthError = { fg = colors.error },
         healthSuccess = { fg = colors.green },
         healthWarning = { fg = colors.warn },
-
-        -- Dashboard
-        DashboardShortCut = { fg = colors.light_gray },
-        DashboardHeader = { fg = colors.yellow },
-        DashboardCenter = { fg = colors.blue },
-        DashboardFooter = { fg = colors.green, style = "italic" },
-
 
         -- the column separating vertically split windows
         VertSplit = { fg = colors.bg },
@@ -538,6 +531,13 @@ local function load_plugins()
 
     local plugins = {
 
+        -- Dashboard
+        DashboardShortCut = { fg = colors.light_gray },
+        DashboardHeader = { fg = colors.yellow },
+        DashboardCenter = { fg = colors.blue },
+        DashboardCenterIcon = { fg = colors.light_gray },
+        DashboardFooter = { fg = colors.green },
+
         -- Cmp
         CmpItemAbbr = { fg = colors.fg },
         CmpItemAbbrDeprecated = { fg = colors.fg },
@@ -636,7 +636,7 @@ local function load_plugins()
         TelescopeResultsTitle = { fg = colors.black, bg = colors.black },
         TelescopePreviewNormal = { bg = colors.active },
         TelescopePreviewBorder = { fg = colors.active, bg = colors.active },
-        TelescopePreviewTitle = { fg = colors.active, bg = colors.active },
+        TelescopePreviewTitle = { fg = colors.active, bg = colors.red }, --active
         TelescopeSelectionCaret = { fg = colors.selection, bg = colors.selection },
         TelescopeSelection = { fg = colors.fg, bg = colors.fg_gutter },
         TelescopeMatching = { fg = colors.yellow, style = "bold" },
@@ -771,6 +771,22 @@ local function load_plugins()
         tkTagSep = { fg = colors.dark_blue },
         tkTag = { fg = colors.bg, bg = colors.light_gray, style = "bold" },
         tkHighlight = { fg = colors.bg, bg = colors.blue, },
+
+        --noice
+        NoiceCmdlineIcon	 = { fg = colors.orange },
+        NoiceCmdlineIconSearch	 = { fg = colors.orange },
+        NoiceCmdlinePopupBorder = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopupBorderCmdline = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopupBorderFilter = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopupBorderHelp = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopupBorderLua = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopupBorderSearch = { fg = colors.black, bg = colors.black },
+        NoiceCmdlinePopup	 = { fg = colors.fg, bg = colors.black },
+        NoicePopupmenuMatch	 = { fg = colors.yellow, style = "bold" },
+        NoiceConfirmBorder = { fg = colors.dark, bg = colors.dark },
+        NoiceConfirm = { fg = colors.dark, bg = colors.dark },
+        NoiceFormatConfirm = { bg = colors.light_gray },
+        NoiceFormatConfirmDefault = { bg = colors.red },
     }
 
     -- Options:

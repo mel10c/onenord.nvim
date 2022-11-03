@@ -8,6 +8,7 @@ local colors = {
     gray         = "#646A76",
     light_gray   = "#6C7A96",
     black        = "#3B4252", -- new
+    dark         = "#242932",
     -- white        = "#e5e9f0", -- new
     white        = "#ffffff", -- new
 
