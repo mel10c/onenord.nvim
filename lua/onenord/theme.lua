@@ -787,6 +787,14 @@ local function load_plugins()
         NoiceConfirm = { fg = colors.dark, bg = colors.dark },
         NoiceFormatConfirm = { bg = colors.light_gray },
         NoiceFormatConfirmDefault = { bg = colors.red },
+
+        -- Pandoc
+        pandocAtxHeader = { fg = colors.blue, style = "bold" },
+        pandocSetexHeader = { fg = colors.blue, style = "bold" },
+        pandocHeaderID = { fg = colors.blue, style = "bold" },
+        pandocStrong = { fg = colors.white, style = "bold" },
+        pandocStrongEmphasis = { fg = colors.white, style = "bold" },
+        pandocEmphasis = { fg = colors.light_yellow , style = "italic" },
     }
 
     -- Options:
