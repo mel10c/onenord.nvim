@@ -564,6 +564,7 @@ local function load_plugins()
         CmpItemKindTypeParameter = { fg = colors.yellow },
 
         -- Notify
+        NotifyBackground = { bg = colors.bg },
         NotifyERRORBorder = { fg = colors.error },
         NotifyWARNBorder = { fg = colors.warn },
         NotifyINFOBorder = { fg = colors.info },
